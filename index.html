@@ -4,30 +4,59 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit&family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
     <title>conversor</title>
 </head>
-<body>
-    <div class="header">
-        <h1 class="h1Header">conversor de divisas</h1>
-    </div>
-    <div class="divisasActuales">
-        <h2 id="usd"></h2><br>
-        <h2 id="eu"></h2><br>
-        <h2 id="real"></h2><br>
-
+<body class="body">
+    <div class="header container-fluid">
+        <h1 class="h1H">conversor de divisas</h1>
     </div>
 
-    <input type="text" id="ars" placeholder="pesos argentinos">
-    <button class="btn" id="convertir" onclick="convertir()">convertir</button>
-
-    <div class="mostrarConversion">
-        <p id="mostrarUsd"></p>
-        <p id="mostrarEu"></p>
-        <p id="mostrarReal"></p>
-
+    <div class="divisasActuales container-fluid">
+        <p class="p-dA" id="usd"></p>
+        <p class="p-dA" id="eu"></p>
+        <p class="p-dA" id="real"></p>
     </div>
+
+    <div class="input-group mb-3">
+        <input type="text" class="form-control" placeholder="ARS a convertir" aria-label="" aria-describedby="ars" id="ars">
+        <div class="input-group-append">
+          <button class="btn btn-primary" type="button" id="convertir" onclick="convertir()">Convertir</button>
+        </div>
+      </div><br>
+
+
+    <div class="mostrarConversion container-fluid">
+        <p class="p-d" id="mostrarUsd"></p>
+        <p class="p-d" id="mostrarEu"></p>
+        <p class="p-d" id="mostrarReal"></p>
+    </div>
+
+    <div class="footer">
+        <div class="socialMed">
+            <ul class="ulSocialMed">
+                <li class="liSocialMed"><i class="fab fa-instagram fa-x2"></i></li>
+                <li class="liSocialMed"><i class="fab fa-whatsapp fa-x2"></i></li>
+                <li class="liSocialMed"><i class="fab fa-facebook fa-x2"></i></li>
+            </ul>
+        </div>
+        <p class="p-foot">maxicodezz&copy; 2021</p>
+    </div>
+
+
+
+
     
 
     <script src="js/app.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 </body>
 </html>
