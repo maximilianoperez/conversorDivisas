@@ -8,6 +8,7 @@ document.querySelector('#usd').innerHTML = 'USD : '+usd;
 document.querySelector('#eu').innerHTML = 'EURO : '+eu;
 document.querySelector('#real').innerHTML = 'REAL : '+real;
 
+
 function convertir(){
     if(ars.value > 0){
        var result = ars.value/usd
@@ -21,3 +22,4 @@ function convertir(){
        
     }
 }
+
